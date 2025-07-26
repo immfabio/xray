@@ -1,0 +1,30 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [{
+    "port": 8080,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{
+        "id": "4511eb54-711e-4e85-b8dc-ee843dc90990",
+        "flow": ""
+      }],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "tls",
+      "tlsSettings": {},
+      "wsSettings": {
+        "path": "/esim_dark",
+        "headers": {
+          "Host": "app.snapchat.com"
+        }
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom"
+  }]
+}
